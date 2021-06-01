@@ -1,0 +1,50 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background: #FFF; margin-bottom: 15px;">
+    <center>
+        <img src="{url_static}/images/logo.png" alt="Orozco Viajes" width="250" style="margin-top: 20px; margin-bottom: 20px;">
+    </center>
+</div>
+<div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 col-sm-12 col-xs-12">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="x_panel" id="div_consultar_remitocarga">
+            <div class="x_content">
+                <div class="pricing">
+                    <div class="title" style="background: #226fe2;">
+                        <h2>Consulta</h2>
+                        <h1>Ingresar número guía</h1>
+                    </div>
+                    <div class="x_content">
+                        <div class="pricing_features">
+                            <div class=" form">
+                                <form class="form" id="formulario_guardar" method="post" action="{url_app}/seguimiento/buscar">
+                                    <div class="form-group">
+                                        <label>Número de guía</label>
+                                        <input type="text" class="form-control" id="numero_guia" name="numero_guia" required>
+                                    </div>
+                                    <div class="form-group" align="right">
+                                        <button type="submit" class="btn btn-app"> <i class="fa fa-search"></i> Consultar </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        {alerta}
+        <div class="x_panel">
+            <div class="x_title">
+                <h2><i class="fa fa-retweet"></i>&nbsp;&nbsp; Seguimiento</h2>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <table class="table table-hover">
+                    <tbody>
+                        {lst_seguimiento}
+                    </tbody>
+                </table>
+            </div>
+        </div>        
+    </div>
+</div>
